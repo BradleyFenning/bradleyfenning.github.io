@@ -13,49 +13,49 @@
 </head>
 
 <body class="bg-dark">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-center" id="topNavbar">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Bradley Fenning</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#education">Education</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#experience">Work Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#hobbies">Hobbies</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
 
-    </ul>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="topNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bradley Fenning</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar" aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapseNavbar">
+        <ul class="nav navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About Me <i class="fas fa-address-card"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education <i class="fas fa-university"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Work Experience <i class="fas fa-user-md"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects <i class="fas fa-project-diagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies <i class="fas fa-futbol"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
 
+
+
   <div class="hero-image">
-    <header class="text-white p-4">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-md-3 text-left text-md-center mb-2">
-            <img class="rounded-circle img-fluid" src="images/face.jpg" alt="Profile Photo" />
-          </div>
-        </div>
-      </div>
-    </header>
     <div class="hero-text">
       <h1>Bradley Fenning</h1>
       <h5 class="pb-3 border-bottom">Software Developer</h5>
-
     </div>
     <div class="text-center">
 
-      <!-- Button trigger modal -->
+
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Contact Me
       </button>
@@ -105,12 +105,32 @@
 
 
   <main class="container">
+    <div class="row " id="aboutme">
+      <div class="col-md mt-5 p-5 my-4 bg-secondary rounded-3">
+        <h2 class="mb-5 text-md-center">About Me</h2>
+        <div class="row">
+          <div class="col-md-3 text-left text-md-center mb-2">
+            <img class="rounded-circle img-fluid" src="images/face.jpg" alt="Profile Photo" />
+          </div>
+          <div class="col-md 4 bg-light rounded-3 text-center p-5">
+            <p> Hi, My name is Bradley Fenning. I am a 21 year software developer. I currently based in Dublin, Ireland.
+              I have over 3 years of experience in studying software development with my college course in TU Dublin -
+              Tallaght Campus.
+              I have a exeperience with working with C++, C#, Python, Java, Javascript, Html and CSS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row" id="education">
       <div class="col-md mt-5 p-5 my-4 bg-secondary rounded-3">
         <!-- work experience -->
         <h2 class="mb-5 text-md-center">Education</h2>
-        <p class="p-5 bg-light rounded-3">I am a Software Developer student in TU Dublin. My campus is based in Tallaght. I have been studying software development in college for 4 years.
-          I began learning to code when I was 12 while I attended coding workshops in the Dublin Science Gallery. Below you can find my grades
+        <p class="p-5 bg-light rounded-3">I am a Software Developer student in TU Dublin. My campus is based in
+          Tallaght. I have been studying software development in college for 4 years.
+          I began learning to code when I was 12 while I attended coding workshops in the Dublin Science Gallery. Below
+          you can find my grades
           for each of the years of my education.</p>
         <div class="accordion pt-3" id="accordionExample">
           <div class="accordion-item">
@@ -382,7 +402,11 @@
                       <h5 class="text-center">Penneys</h5>
                       <p class="text-center">2019-2020</p>
                       <p class="card-text">I have over 1 year of experience working in the retail sector with Penneys.
-                        My main duties composed of stock replenishment, serving customers and handling payments.
+                        My main duties composed of stock replenishment, serving customers and handling payments. The
+                        main skill which I developed with my time with
+                        Pennyes was my communication skills. Working with the public helped me improve on this skill,
+                        which is benefical to have when working in a Team
+                        in a tech company context.
                       </p>
                     </div>
                   </div>
