@@ -12,25 +12,7 @@
   <script src="js/script.js"></script>
 </head>
 
-<body>
-  
-  <div class="hero-image">
-    <header class="text-white py-5">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-md-3 text-left text-md-center mb-2">
-            <img class="rounded-circle img-fluid" src="images/face.jpg" alt="Profile Photo" />
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="hero-text">
-      <h1>Bradley Fenning</h1>
-      <h5 class="pb-3 border-bottom">Software Developer</h5>
-    </div>
-  </div>
-
-
+<body class="bg-dark">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-center" id="topNavbar">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Bradley Fenning</a>
@@ -56,16 +38,81 @@
   </nav>
 
 
+  <div class="hero-image">
+    <header class="text-white p-4">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-3 text-left text-md-center mb-2">
+            <img class="rounded-circle img-fluid" src="images/face.jpg" alt="Profile Photo" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hero-text">
+      <h1>Bradley Fenning</h1>
+      <h5 class="pb-3 border-bottom">Software Developer</h5>
+
+    </div>
+    <div class="text-center">
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Contact Me
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3" onsubmit="submitContact()">
+
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" name="name" id="firstname" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" name="Last Name" id="lastname" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="emailnfo" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" id="emailInfo" required>
+                </div>
+                <div class="col-md-12">
+                  <label for="comments" class="form-label">Comments</label>
+                  <textarea class="form-control" id="comments" name="comments" rows="3" required></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i class="fab fa-linkedin-in"></i>
+
+
+
+  </div>
+
 
 
   <main class="container">
     <div class="row" id="education">
-      <div class="col-md mt-5 p-5 my-4 bg-light rounded-3">
+      <div class="col-md mt-5 p-5 my-4 bg-secondary rounded-3">
         <!-- work experience -->
         <h2 class="mb-5 text-md-center">Education</h2>
-        <p>I am a Software Developer student in TU Dublin. My campus is based in Tallaght. Below you can find my grades
+        <p class="p-5 bg-light rounded-3">I am a Software Developer student in TU Dublin. My campus is based in Tallaght. I have been studying software development in college for 4 years.
+          I began learning to code when I was 12 while I attended coding workshops in the Dublin Science Gallery. Below you can find my grades
           for each of the years of my education.</p>
-        <div class="accordion" id="accordionExample">
+        <div class="accordion pt-3" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -82,12 +129,12 @@
                     <div class="col-sm">
                       <h4>Semester 1</h4>
                       <table class="table col-md-4">
-                        <thread>
+                        <thead>
                           <tr>
                             <th scope="col">Subject</th>
                             <th scope="col">Grade</th>
                           </tr>
-                        </thread>
+                        </thead>
                         <tbody>
                           <tr>
                             <td>Software Development 1</td>
@@ -321,10 +368,9 @@
     </div>
 
     <div class="row" id="experience">
-      <div class="col-md mt-5 p-5 my-4 bg-light rounded-3">
+      <div class="col-md mt-5 p-5 my-4 bg-secondary rounded-3">
         <!-- work experience -->
         <h2 class="mb-5 text-md-center">Work Experience</h2>
-
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox" style=" width:100%; height: 50rem !important;">
             <div class="carousel-item active">
@@ -335,8 +381,8 @@
                     <div class="card-body">
                       <h5 class="text-center">Penneys</h5>
                       <p class="text-center">2019-2020</p>
-                      <p class="card-text">I have over 1 year of experience working in the retail section with Penneys.
-                        My main duties composed of stock replenishment, serving custoemrs and handling payments.
+                      <p class="card-text">I have over 1 year of experience working in the retail sector with Penneys.
+                        My main duties composed of stock replenishment, serving customers and handling payments.
                       </p>
                     </div>
                   </div>
@@ -372,64 +418,34 @@
             </button>
           </div>
         </div>
-
-
-
-        <h2 class="mb-5">Skills</h2>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 95%" aria-valuenow="95"
-            aria-valuemin="0" aria-valuemax="100">HTML</div>
-        </div>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 89%" aria-valuenow="89"
-            aria-valuemin="0" aria-valuemax="100">CSS</div>
-        </div>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 87%" aria-valuenow="87"
-            aria-valuemin="0" aria-valuemax="100">JavaScript</div>
-        </div>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 80%" aria-valuenow="80"
-            aria-valuemin="0" aria-valuemax="100">WordPress</div>
-        </div>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 78%" aria-valuenow="78"
-            aria-valuemin="0" aria-valuemax="100">Photoshop</div>
-        </div>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 77%" aria-valuenow="77"
-            aria-valuemin="0" aria-valuemax="100">PHP</div>
-        </div>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 75%" aria-valuenow="75"
-            aria-valuemin="0" aria-valuemax="100">Linux</div>
-        </div>
-        <div class="progress mb-4" style="height:25px;">
-          <div class="progress-bar bg-primary text-left pl-2" role="progressbar" style="width: 65%" aria-valuenow="65"
-            aria-valuemin="0" aria-valuemax="100">SEO</div>
-        </div>
       </div>
-    </div>
     </div>
 
     <div class="row" id="projects">
-      <div class="col-md mt-5 p-5 my-4 bg-light rounded-3">
+      <div class="col-md mt-5 p-5 my-4 bg-secondary rounded-3">
         <!-- work experience -->
         <h2 class="mb-5 text-md-center">Projects</h2>
-        <ul>
-          <li>
-            <h6 class="text-primary">Senior Web Developer / Digital Agency 2016-2020</h6>
-            <p>Phasellus et tellus iaculis, interdum augue vel, luctus nulla. Aenean viverra, magna a ultricies
-              elementum, dui
-              mi tristique ligula, non euismod leo mauris ac metus.</p>
-          </li>
-
-        </ul>
+        <div class="p-5 mb-5 bg-light rounded-3">
+          <h4>Allergy Restaurant Booking Service (4th Year project)</h4>
+          <p>This project i have been working on for my 4th year project. The project mainly focusing on creating a
+            restuarant booking system were users can filter
+            restuarant selections to their dietary needs. The project will be developed to be used on android systems.
+            I am working with Javascript and React Native to create the application.
+          </p>
+        </div>
+        <div class="p-5 bg-light rounded-3">
+          <h4>My Github</h4>
+          <p>
+            To find all of my other projects, please visit my github and check out my other projects.
+          </p>
+          <a href="https://github.com/BradleyFenning" class="btn btn-primary btn-sm"><i class="fab fa-github"></i> My
+            Github</a>
+        </div>
       </div>
     </div>
 
     <div class="row" id="hobbies">
-      <div class="col-md mt-5 p-5 my-4 bg-light rounded-3">
+      <div class="col-md mt-5 p-5 my-4 bg-secondary rounded-3">
         <!-- work experience -->
         <h2 class="mb-5 text-md-center">Hobbies</h2>
         <div class="hobbies">
@@ -457,15 +473,12 @@
 
 
     <div class="row" id="contact">
-      <div class="col-md mt-5 p-5 my-4 bg-light rounded-3">
+      <div class="col-md mt-5 p-5 my-4 bg-secondary rounded-3">
         <!-- work experience -->
         <h2 class="mb-5 text-md-center">Contact</h2>
 
         <div class="section-title">
-          <form class="row g-3" action="" method="POST" onsubmit="submitContact()">
-            <input type="text" name="_honey" style="display: none;">
-
-            <input type="hidden" name="_next" value="">
+          <form class="row g-3 bg-light p-3 rounded-3" onsubmit="submitContact()">
 
             <div class="col-md-6">
               <label for="firstName" class="form-label">First Name</label>
@@ -475,13 +488,9 @@
               <label for="lastName" class="form-label">Last Name</label>
               <input type="text" class="form-control" name="Last Name" id="lastname" required>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-12">
               <label for="emailnfo" class="form-label">Email</label>
               <input type="email" class="form-control" name="email" id="emailInfo" required>
-            </div>
-            <div class="col-md-4">
-              <label for="phoneNumber" class="form-label">Phone Number (Optional)</label>
-              <input type="text" class="form-control" name="phone" id="phoneNumber">
             </div>
             <div class="col-md-12">
               <label for="comments" class="form-label">Comments</label>
